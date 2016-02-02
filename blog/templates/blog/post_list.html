@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Nada ainda</title>
+	<title>Blog do Leo</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 </head>
 <body>
-	<div>
-    	<h1><a href="">Fogao filho da puta</a></h1>
-    </div>
-    <div>
-	{% for post in posts %}
-		<div>
-			<h3> {{ post.title }} </h3>
-			<p>Publicado em: {{ post.published_date }}</p>
-		
-			<p>{{ post.text|linebreaks}}</p>
+	<div class="container">
+		<div class="jumbotron">
+  			<h1>Blog do Leo!</h1>
+  			<p>Teste em <a href="https://www.pythonanywhere.com/">pythonanywhere</a></p>
 		</div>
-	{% endfor %}
+	    <div>
+		{% for post in posts %}
+			<div>
+				<h3> {{ post.title }} </h3>
+				<p>Publicado em: {{ post.published_date }}</p>
+			
+				<p>{{ post.text|linebreaks}}</p>
+			</div>
+		{% endfor %}
+	    </div>
     </div>
 </body>
 </html>
