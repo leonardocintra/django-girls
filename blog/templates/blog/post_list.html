@@ -18,8 +18,6 @@
 		        <!--DIRETO NA PAGINA -->
 		        {% if post.image_url %}
 		        	{% cloudinary post.image_url width=100 height=100 crop="fill" %}
-		        {% else %}
-		        	{% cloudinary "produto-sem-imagem" width=100 height=100 crop="fill" %}
 		        {% endif %}
 
 		    </div>
