@@ -1,5 +1,7 @@
 {% extends 'blog/base.html' %}
 
+{% load cloudinary %}
+
 {% block content %}
     <div class="post">
         {% if post.published_date %}
@@ -10,5 +12,11 @@
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaks }}</p>
+
+        {% if post.image_url %}
+            {% cloudinary post.image_url width=600 height=400 %}
+        {% else %}
+            {% cloudinary "produto-sem-imagem" width=300 height=300 crop="fill" %}
+        {% endif %}
     </div>
 {% endblock %}

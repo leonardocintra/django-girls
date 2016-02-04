@@ -117,13 +117,6 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Cloudinary
-CLOUDINARY = {
-  'cloud_name': 'bolosdacleo',  
-  'api_key': '182946961533113',  
-  'api_secret': 'LAIVTLNHtG5x-TTdUmHgaE3CnsM',  
-}
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
