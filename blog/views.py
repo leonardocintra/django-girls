@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from .models import Post
@@ -15,8 +17,12 @@ def post_detail(request, pk):
 
 def post_new(request):
 	if request.method == "POST":
-		form = PostForm(request.POST)
+		form = PostForm(request.POST, request.FILES)
 		if form.is_valid():
+			file = request.FILES['image_url']
+			if file:
+				Post.publishCloudinary(file)
+
 			post = form.save(commit=False)
 			post.author = request.user
 			post.published_date = timezone.now()
