@@ -119,9 +119,9 @@ USE_TZ = True
 
 # Cloudinary
 CLOUDINARY = {
-  'cloud_name': 'bolosdacleo',  
-  'api_key': '182946961533113',  
-  'api_secret': 'LAIVTLNHtG5x-TTdUmHgaE3CnsM',  
+  'cloud_name': 'yourcloudname',  
+  'api_key': 'yourapikey',  
+  'api_secret': 'YOURAPISECRET',  
 }
 
 # Static files (CSS, JavaScript, Images)
