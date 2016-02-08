@@ -4,7 +4,7 @@ Django Girls with Cloudinary
 A simple web application that allows you to uploads photos, maintain a database with references to them, list them with their metadata, and display them using various cloud-based transformations.
 
 
-Testing [Python Any Where](https://www.pythonanywhere.com/)
+Testing [Python Any Where](http://leonardocintra.pythonanywhere.com/)
 
 Tutorial: [Django Girls](http://tutorial.djangogirls.org/en/installation/index.html)
 
