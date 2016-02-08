@@ -30,7 +30,7 @@ Run the following commands from your shell.
 
 Project cloning and dependent package installation: 
 
-    git clone https://github.com/leonardocintra/django-girls.git
+    git clone https://github.com/leonardocintra/django-girls-cloudinary.git
     cd django-girls
     pip install -r requirements.txt
 
